@@ -1,0 +1,26 @@
+
+
+Welcome to the Encryption Scavenger Hunt!
+
+In order to complete the tasks you will need openssl and gpg (GnuPrivacy Guard)
+These can be obtained using your package manage on linux or HomeBrew on Mac (http://brew.sh/)
+
+Each level is a gzipped tar archive that has been encrypted using openssl’s
+aes-256-cbc with the password at the end of the previous level
+
+In order to decrypt the next level1 file run the following command
+
+"openssl aes-256-cbc -d -a -in level1*.aes -out $(basename level1* .aes)"
+
+And then enter the password.
+For the following levels use the same command but 
+use the level number corresponding to that level
+
+good luck!
+
+The Password to the level one is ENCRYPTIONGAME
+
+sincerely,
+/u/GrantJamesPowell
+
+
